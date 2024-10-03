@@ -4,7 +4,7 @@ from typing import List
 class Solution:
     def maxArea(self, height: List[int]) -> int:
         
-        res = 0
+        result = 0
         left = 0
         right = len(height) - 1
         # 透過快慢指針，比對 height[left] 和 height[right] 的最大面積
@@ -19,4 +19,4 @@ class Solution:
             else:
                 right -= 1
         
-        return res
+        return result
